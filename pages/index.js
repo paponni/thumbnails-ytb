@@ -25,12 +25,22 @@ const Index = () => {
         resolution: option.resolution,
         url: `${thumbnailBaseUrl}${videoURL}/${option.code}.jpg`,
       }));
+      
 
       setThumbnailOptions(thumbnailOptions);
       setVideoURL("");
     } else {
       setThumbnailOptions([]);
     }
+  };
+  const downloadImage = (option,index) => {
+    const link = document.createElement('a');
+    link.href = option.url;
+    link.download = `Thumbnail${index + 1}`;
+    link.style.display = 'none'; // Hide the link
+    document.body.appendChild(link); // Append the link to the DOM
+    link.click(); // Simulate click
+    document.body.removeChild(link);
   };
 
   return (
@@ -72,6 +82,9 @@ const Index = () => {
                 >
                   Copy Image URL
                 </button>
+                <a className="btn-blue" onClick={() => downloadImage(option,index)} download>
+                  Download Image
+                </a>
               </div>
             ))}
           </div>
