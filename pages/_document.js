@@ -22,6 +22,7 @@ class MyDocument extends Document {
             sizes="16x16"
             href="/favicon/favicon-16x16.png"
           />
+          <meta name="description" content="Download youtube thumbnail Image heigh quality format on different sizes."></meta>
           
           <link rel="manifest" href="/favicon/site.webmanifest" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
