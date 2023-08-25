@@ -127,3 +127,8 @@ input[type="text"] + button {
 .thumbnail-option button:hover {
   background-color: #2680c5;
 }
+
+.privacy-policy-link{
+  color: white;
+  font-size: 22px;
+}

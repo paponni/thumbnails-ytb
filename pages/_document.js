@@ -23,7 +23,7 @@ class MyDocument extends Document {
             href="/favicon/favicon-16x16.png"
           />
           <meta name="description" content="Download youtube thumbnail Image heigh quality format on different sizes."></meta>
-          
+          <meta name="privacy-policy" content="/privacy-policy" className="privacy-policy-link" />
           <link rel="manifest" href="/favicon/site.webmanifest" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
